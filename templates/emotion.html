@@ -1,13 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+{% extends 'base.html' %}
+{% block bodyblock %}
 
-    <title>Document</title>
-</head>
-<body>
+<div class="container">
+<h2 class="content">Emotion Reacogniton Page</h2>
+</div>
+
+<div class="container">
+<br>
+<form action="#" method='POST' enctype="multipart/form-data"><br>
+    <label for="upload">Upload to predict</label></t>
+    <input type="file" name="image" required="true"><br><br>
+    <input type="submit" value="Upload & Predict">
+</form>
+</div>
+
+
+<style>
+    .content{
+        color: #867979;
+        font-size: 30px;
+        padding-left: 10px;
+    }
     
-</body>
-</html>
+</style>
+{% endblock %}
