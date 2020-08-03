@@ -1,4 +1,4 @@
-import tensorflow as tf
+'''import tensorflow as tf
 
 import keras
 from keras.models import Sequential
@@ -16,7 +16,7 @@ from cv2 import cv2
 model=load_model("model/ferlatest.h5")
 
 def pipeline_model(path,filename):
-    '''img=cv2.imread(path)
+    img=cv2.imread(path)
     predictions=model.predict(img)
     testing_img=np.array(img)
     testing_img=testing_img.reshape([48, 48])	
